@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Otaku Central | More Than a Convention</title>
+<meta name="description" content="Otaku Central: cosplay, anime, gaming and community. Calendar of events, ticket passes and day passes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Outfit:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header" id="top">
+  <div class="header-right">
+    <a class="icon-btn" href="#" aria-label="Account">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+    </a>
+    <a class="icon-btn" href="#tickets" aria-label="Cart">
+      <svg viewBox="0 0 24 24"><path d="M3 4h2l2.4 11h10.2l2-8H7"/><circle cx="9.5" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/><path d="M12 8v5M9.5 10.5h5"/></svg>
+    </a>
+    <a class="btn" href="#tickets">Buy Tickets</a>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="hero" aria-label="Welcome to Otaku Central">
+  <video class="hero-video" id="heroVideo" autoplay muted loop playsinline preload="auto" disablepictureinpicture aria-hidden="true" poster="">
+    <source src="hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero-content">
+    <h1 class="hero-title">OTAKU</h1>
+    <div class="hero-sub" aria-hidden="true">
+      <span class="slash"></span>
+      <span class="bar">CENTRAL</span>
+    </div>
+    <nav class="hero-nav" aria-label="Quick links">
+      <a href="#tickets">Pricing</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#footer">Merchants</a>
+      <a href="#news">Cosplay</a>
+      <a href="#news">Guests</a>
+      <a href="#news">About Us</a>
+    </nav>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"></div>
+</section>
+
+<!-- ========== INTRO ========== -->
+<section class="section intro" id="news" aria-labelledby="newsTitle">
+  <h2 class="sr-only" id="newsTitle">Latest News &amp; Blog</h2>
+  <div class="news-wrap">
+    <button class="car-btn car-prev" type="button" aria-label="Previous news" id="carPrev">&lsaquo;</button>
+  <div class="news-grid" id="newsGrid" tabindex="0" aria-label="Latest news carousel">
+    <article class="news-item">
+      <a href="#news" class="news-img"><img src="news-1.svg" alt="Cosplayer under stage spotlights" loading="lazy"></a>
+      <div class="news-cap">
+        <h3>Behind the Costumes</h3>
+        <p>From foam sculpting to LED wiring, see how top cosplayers build their showpieces.</p>
+      </div>
+    </article>
+    <article class="news-item">
+      <a href="#news" class="news-img"><img src="news-2.svg" alt="Glowing game controller on a blue background" loading="lazy"></a>
+      <div class="news-cap">
+        <h3>Tournament Brackets Are Set</h3>
+        <p>Sixteen teams made it through the qualifiers. Here is the full bracket and match times.</p>
+      </div>
+    </article>
+    <article class="news-item">
+      <a href="#news" class="news-img"><img src="news-3.svg" alt="Microphone on a lit stage" loading="lazy"></a>
+      <div class="news-cap">
+        <h3>Meet the Voice Actors</h3>
+        <p>Returning favourites and a few surprise names, with their panels and meet-and-greet slots.</p>
+      </div>
+    </article>
+    <article class="news-item">
+      <a href="#news" class="news-img"><img src="news-4.svg" alt="Tote bag and enamel pins on a table" loading="lazy"></a>
+      <div class="news-cap">
+        <h3>Artist Alley Preview</h3>
+        <p>Prints, pins and handmade goods from 40 independent creators on this year's alley map.</p>
+      </div>
+    </article>
+  </div>
+    <button class="car-btn car-next" type="button" aria-label="Next news" id="carNext">&rsaquo;</button>
+    <div class="car-dots" id="carDots"></div>
+  </div>
+</section>
+
+<section class="section mountain-section">
+  <div class="art" role="img" aria-label="Mountain with a red sun. More than a convention. World where you belong. Otaku Central.">
+    <svg viewBox="0 380 1285 430" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+      <circle cx="745" cy="485" r="82" fill="#ff0000"/>
+      <path d="M638 455 C610 490 560 540 500 580 C440 620 380 640 312 650 C380 646 440 632 490 610 C550 585 600 530 630 470 Z" fill="#34455f"/>
+      <path d="M638 455 C668 490 730 548 800 590 C860 620 920 632 975 635 C930 645 880 640 830 625 C760 602 700 560 668 520 C652 498 644 476 638 455 Z" fill="#34455f"/>
+    </svg>
+    <div class="t t1">More than a convention</div>
+    <div class="t t2">World where you belong</div>
+    <div class="bc" aria-hidden="true">
+      <div class="bars"></div>
+      <div class="cap">Otaku Central</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CALENDAR ========== -->
+<section class="section calendar" id="calendar" aria-labelledby="calTitle">
+  <h2 class="section-title" id="calTitle">Calendar of Events</h2>
+
+  <div class="cal-board">
+    <div class="cal-inner">
+      <div class="cal-tabs" role="tablist" aria-label="Choose a day">
+        <button class="cal-tab" role="tab" id="tab-0" aria-selected="true" aria-controls="calPanel" data-index="0">Day 1</button>
+        <button class="cal-tab" role="tab" id="tab-1" aria-selected="false" aria-controls="calPanel" data-index="1" tabindex="-1">Day 2</button>
+        <button class="cal-tab" role="tab" id="tab-2" aria-selected="false" aria-controls="calPanel" data-index="2" tabindex="-1">Day 3</button>
+      </div>
+
+      <div class="cal-body" role="tabpanel" id="calPanel" aria-labelledby="tab-0" aria-live="polite">
+        <div class="cal-info">
+          <h3 id="calDayTitle"></h3>
+          <p id="calDayDesc"></p>
+          <div class="cal-stats" id="calStats"></div>
+        </div>
+        <div class="cal-cols" aria-hidden="true">
+          <span>Time</span><span>Event</span><span>Location</span>
+        </div>
+        <div class="cal-rows" id="calRows"></div>
+      </div>
+    </div>
+    <div class="cal-foot" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- ========== TICKETS ========== -->
+<section class="section tickets" id="tickets" aria-labelledby="ticketTitle">
+  <div class="tix-grid">
+    <div class="tix-left">
+    <h2 class="tix-title" id="ticketTitle">Tickets</h2>
+    <aside class="tix-info" aria-live="polite">
+      <div class="eyebrow">Selected pass</div>
+      <h3 id="tixName">Platinum Pass</h3>
+      <div class="price" id="tixPrice">$249</div>
+      <p class="desc" id="tixDesc"></p>
+      <ul id="tixList"></ul>
+      <div class="facts">
+        <div><b>Validity:</b> <span id="tixValid"></span></div>
+        <div><b>Delivery:</b> Instant e-ticket by email</div>
+        <div><b>Refunds:</b> Full refund up to 30 days before the event</div>
+      </div>
+    </aside>
+    </div>
+
+    <div class="tier-list">
+      <button class="tier platinum active" data-tier="platinum" aria-pressed="true">
+        <div class="tier-art">
+          <h3>Platinum</h3>
+          <ul>
+            <li>3-day full access, all halls</li>
+            <li>VIP lounge &amp; refreshments</li>
+            <li>Guest meet &amp; greet</li>
+            <li>Front-row Main Stage seating</li>
+            <li>Platinum tote &amp; poster set</li>
+          </ul>
+        </div>
+        <div class="tier-buy">
+          <div class="amt">$249<small>3-day pass</small></div>
+          <span class="buy" data-buy="Platinum">Buy Now</span>
+          <div class="bars" aria-hidden="true"></div>
+          <div class="cap" aria-hidden="true">Platinum pass</div>
+        </div>
+      </button>
+
+      <button class="tier gold" data-tier="gold" aria-pressed="false">
+        <div class="tier-art">
+          <h3>Gold</h3>
+          <ul>
+            <li>3-day full access, all halls</li>
+            <li>Priority entry lane</li>
+            <li>Cosplay photography session</li>
+            <li>Reserved seating, Stage 2</li>
+            <li>Exclusive Gold enamel pin</li>
+          </ul>
+        </div>
+        <div class="tier-buy">
+          <div class="amt">$149<small>3-day pass</small></div>
+          <span class="buy" data-buy="Gold">Buy Now</span>
+          <div class="bars" aria-hidden="true"></div>
+          <div class="cap" aria-hidden="true">Gold pass</div>
+        </div>
+      </button>
+
+      <button class="tier silver" data-tier="silver" aria-pressed="false">
+        <div class="tier-art">
+          <h3>Silver</h3>
+          <ul>
+            <li>3-day general admission</li>
+            <li>Access to all halls &amp; exhibitor floor</li>
+            <li>Main Stage shows</li>
+            <li>Convention program booklet</li>
+            <li>Mobile e-ticket entry</li>
+          </ul>
+        </div>
+        <div class="tier-buy">
+          <div class="amt">$89<small>3-day pass</small></div>
+          <span class="buy" data-buy="Silver">Buy Now</span>
+          <div class="bars" aria-hidden="true"></div>
+          <div class="cap" aria-hidden="true">Silver pass</div>
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <div class="dp">
+    <div class="dp-head">
+      <h3>Day Passes</h3>
+      <p>Single-day admission only. Choose the day that works for you.</p>
+    </div>
+    <div class="dp-grid">
+      <article class="dp-card">
+        <div class="who">Adult</div>
+        <div class="age">Ages 13 to 64</div>
+        <div class="amt">$45<small>per day</small></div>
+        <ul>
+          <li>Full day access to all halls</li>
+          <li>Main Stage and Stage 2 shows</li>
+        </ul>
+        <button class="btn" data-buy="Adult day pass">Select</button>
+      </article>
+      <article class="dp-card">
+        <div class="who">Kids</div>
+        <div class="age">Ages 6 to 12</div>
+        <div class="amt">$20<small>per day</small></div>
+        <ul>
+          <li>Full day access to all halls</li>
+          <li>Kids zone and family activities</li>
+          <li>Under 6 enter free with an adult</li>
+        </ul>
+        <button class="btn" data-buy="Kids day pass">Select</button>
+      </article>
+      <article class="dp-card feature">
+        <div class="who">Family</div>
+        <div class="age">2 adults + up to 2 kids</div>
+        <div class="amt">$120<small>per day</small></div>
+        <ul>
+          <li>Save $30 versus separate tickets</li>
+          <li>Full day access for all four</li>
+          <li>Family photo booth pass</li>
+        </ul>
+        <button class="btn" data-buy="Family day pass">Select</button>
+      </article>
+      <article class="dp-card">
+        <div class="who">Seniors</div>
+        <div class="age">Ages 65 and up</div>
+        <div class="amt">$30<small>per day</small></div>
+        <ul>
+          <li>Full day access to all halls</li>
+          <li>Priority seating at Main Stage</li>
+        </ul>
+        <button class="btn" data-buy="Seniors day pass">Select</button>
+      </article>
+    </div>
+    <p class="dp-note">Prices shown in CAD. Valid ID may be requested at entry for age-based passes.</p>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer" id="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="logo">OTAKU <span>CENTRAL</span></a>
+      <p>More than a convention. A world where you belong. Cosplay, anime, gaming and community, all under one roof.</p>
+      <form class="news" onsubmit="event.preventDefault();showToast('Thanks for subscribing!');this.reset();">
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email" type="email" placeholder="Your email" required>
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#tickets">Pricing</a></li>
+        <li><a href="#calendar">Calendar</a></li>
+        <li><a href="#news">Cosplay</a></li>
+        <li><a href="#news">Guests</a></li>
+        <li><a href="#news">About Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Tickets</h4>
+      <ul>
+        <li><a href="#tickets">Platinum Pass</a></li>
+        <li><a href="#tickets">Gold Pass</a></li>
+        <li><a href="#tickets">Silver Pass</a></li>
+        <li><a href="#tickets">Day Passes</a></li>
+        <li><a href="#footer">Refund Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:hello@otakucentral.com">hello@otakucentral.com</a></li>
+        <li><a href="#footer">Merchant applications</a></li>
+        <li><a href="#footer">Press &amp; media</a></li>
+      </ul>
+      <div class="socials">
+        <a href="#footer" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+        <a href="#footer" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.2 2h3.4l-7.4 8.5L23 22h-6.8l-5.3-7-6.1 7H1.4l7.9-9L1 2h7l4.8 6.4L18.2 2zm-1.2 18h1.9L7.1 3.9H5.1L17 20z"/></svg></a>
+        <a href="#footer" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1-5.8 3.1z"/></svg></a>
+        <a href="#footer" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.6 2h-3.3v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.1a6.2 6.2 0 1 0 5.3 6.1V8.9a7.4 7.4 0 0 0 4.3 1.4V7a4.3 4.3 0 0 1-3.3-1.5A4.3 4.3 0 0 1 16.6 2z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Otaku Central. All rights reserved.</span>
+    <nav aria-label="Legal">
+      <a href="#footer">Privacy</a>
+      <a href="#footer">Terms</a>
+      <a href="#footer">Accessibility</a>
+    </nav>
+    <div class="barcode" aria-hidden="true"><div class="bars"></div><div class="cap">Otaku Central</div></div>
+    <a href="#top" class="to-top">Back to top &uarr;</a>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="main.js" defer></script>
+</body>
+</html>
